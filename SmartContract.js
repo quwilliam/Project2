@@ -156,8 +156,8 @@ const CheckEventPercentageWin = async() =>{
   SMART_CONTRACT_INTERFACE.on("EventQuestFinished",(Victory_Result,Character_ID)=>{
    
     console.log(" EVENT PERCENT CHANCE  ",Victory_Result,Character_ID );
-  window.unityInstance.SendMessage('GameScripts', 'CharacterStatusUpdated',parseInt(Character_ID)); 
-  window.unityInstance.SendMessage('GameScripts', 'ShowQuestFinishedResult',parseInt(Victory_Result));   
+ // window.unityInstance.SendMessage('GameScripts', 'CharacterStatusUpdated',parseInt(Character_ID)); 
+ // window.unityInstance.SendMessage('GameScripts', 'ShowQuestFinishedResult',parseInt(Victory_Result));   
   
   } )
 
