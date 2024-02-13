@@ -234,10 +234,11 @@ async function SmartContractGetCharacterStatus( Character_ID)
 
   //let Character_Status_Returned = "";
  // = await SMART_CONTRACT_INTERFACE.CharacterStatus( parseInt(Character_ID));
- let Character_Status_Returned  = await SMART_CONTRACT_INTERFACE.CharacterStatus( Character_ID);
+// let Character_Status_Returned  = await SMART_CONTRACT_INTERFACE.CharacterStatus( Character_ID);
 
  // console.log("SMART CONTRACT CHARACTER STATUS RETURNED ",Character_Status_Returned," & ",Character_ID );
-  return Character_Status_Returned;
+ // return Character_Status_Returned;
+ 
  
 }
 window.SmartContractGetCharacterStatus = SmartContractGetCharacterStatus;
