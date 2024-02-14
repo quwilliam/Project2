@@ -40,10 +40,6 @@
 	</style>
 </head>
 
-
-
-
-
 <body>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art="false"></canvas>
@@ -80,15 +76,15 @@
 					w = window.innerWidth;
 					h = window.innerHeight;
 
-					var r = 648 / 1404;
+					var r = 320 / 700;
 
 					if (w * r > window.innerHeight) {
 						w = Math.min(w, Math.ceil(h / r));
 					}
 					h = Math.floor(w * r);
 				} else {
-					w = 1404;
-					h = 648;
+					w = 700;
+					h = 320;
 				}
 
 				container.style.width = canvas.style.width = w + "px";
@@ -99,7 +95,7 @@
 			createUnityInstance(canvas, config, progressHandler).then(function (instance) {
 				canvas = instance.Module.canvas;
 				onResize();
-				window.unityInstance = instance;				
+				window.unityInstance = instance;
 			});
 			window.addEventListener('resize', onResize);
 			onResize();
